@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1> Image Gallery 🔭</h1>
+
+    <!-- Filter Buttons -->
+    <div class="filters">
+        <button onclick="filterImages('all')">All</button>
+        <button onclick="filterImages('nature')">Nature</button>
+        <button onclick="filterImages('city')">City</button>
+        <button onclick="filterImages('animals')">Animals</button>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery">
+        <img src="download (4).webp" class="nature" onclick="openLightbox(0)">
+        <img src="download (3).webp" class="nature" onclick="openLightbox(1)">
+        <img src="OIP (9).webp" class="nature" onclick="openLightbox(3)">
+        <img src="OIP (10).webp" class="nature" onclick="openLightbox(4)">
+        <img src="OIP (11).webp" class="nature" onclick="openLightbox(5)">
+        <img src="download (5).webp" class="nature" onclick="openLightbox(6)">
+        <img src="OIP (12).webp" class="nature" onclick="openLightbox(7)">
+        <img src="OIP (13).webp" class="nature" onclick="openLightbox(8)">
+        <img src="Nagaraja-Temple-Nagercoil-Tamil-Nadu-India.webp" class="city" onclick="openLightbox(9)">
+        <img src="download (2).webp" class="city" onclick="openLightbox(10)">
+        <img src="OIP (3).webp" class="city" onclick="openLightbox(11)">
+        <img src="OIP (4).webp" class="city" onclick="openLightbox(12)">
+        <img src="OIP (1).webp" class="city" onclick="openLightbox(13)">
+        <img src="OIP (2).webp" class="city" onclick="openLightbox(14)">
+        <img src="download (1).webp" class="city" onclick="openLightbox(15)">
+        <img src="animal-big-fur-247502.jpg" class="animals" onclick="openLightbox(16)">
+        <img src="download.webp" class="animals" onclick="openLightbox(17)">
+        <img src="OIP.webp" class="animals" onclick="openLightbox(18)">
+        <img src="OIP (5).webp" class="animals" onclick="openLightbox(19)">
+        <img src="OIP (6).webp" class="animals" onclick="openLightbox(20)">
+        <img src="OIP (7).webp" class="animals" onclick="openLightbox(21)">
+        <img src="OIP (8).webp" class="animals" onclick="openLightbox(22)">
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox">
+        <span class="close" onclick="closeLightbox()">×</span>
+        <button class="prev" onclick="changeImage(-1)">❮</button>
+        <img id="lightbox-img">
+        <button class="next" onclick="changeImage(1)">❯</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
